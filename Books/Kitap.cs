@@ -72,7 +72,7 @@ namespace CSProjeDemo1.Books
 
 			set
 			{
-				if (!string.IsNullOrEmpty(value) || value.Length! > 100)
+				if (!string.IsNullOrEmpty(value) && value.Length <= 100)
 					_baslik = value;
 				else
 				{
